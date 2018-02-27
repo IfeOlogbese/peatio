@@ -42,7 +42,7 @@ tags
 .idea
 
 /vendor/bundle
-/vendor/assets/yarn_components
+/vendor/assets/yarn_components/*
 .env
 .DS_Store
 .agignore
