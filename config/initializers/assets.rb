@@ -31,3 +31,5 @@ Dir.chdir 'vendor/assets/yarn_components' do
     Rails.application.config.assets.precompile << path
   end
 end
+
+# Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "yarn_components")
