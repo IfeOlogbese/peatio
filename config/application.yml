@@ -13,6 +13,11 @@ defaults: &defaults
   URL_SCHEME: http
   FORCE_SECURE_CONNECTION: false # Set to "true" to disable access via unsecured HTTP, send HSTS headers and use secure cookies.
 
+  DATABASE_HOST: 'localhost'
+  DATABASE_USER: 'root'
+  DATABASE_PASS: ''
+  DATABASE_URL: mysql://ife:'prego1'@localhost
+
   # session expire time (seconds)
   SESSION_EXPIRE: '60'
 
