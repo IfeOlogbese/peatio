@@ -74,6 +74,7 @@ namespace :deploy do
     end
   end
 
+  before :deploy, '     custom:run_yarn_task'  
   before :starting,     :check_revision
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
