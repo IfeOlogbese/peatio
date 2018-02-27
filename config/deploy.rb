@@ -47,17 +47,6 @@ namespace :puma do
   before :start, :make_dirs
 end
 
-namespace :vendor do
-    desc 'Create Yarn Dir'
-    task :make_yarn do
-      on roles(:app) do
-        execute "mkdir /home/#{fetch(:user)}/apps/#{fetch(:application)}/vendor/assets/yarn_components"
-      end
-    end
-  
-    before :start, :make_yarn
-end
-
 namespace :deploy do
   desc "Make sure local git is in sync with remote."
   task :check_revision do

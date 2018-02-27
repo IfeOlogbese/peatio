@@ -1,0 +1,10 @@
+namespace :custom do
+  desc 'create yarn directory'
+  task :run_yarn_task do
+    on roles(:app) do
+      within "#{current_path}" do
+        execute "mkdir vendor/assets/yarn_components"
+      end
+    end
+  end
+end
