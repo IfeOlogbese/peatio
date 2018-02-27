@@ -74,15 +74,15 @@ namespace :deploy do
     end
   end
 
-#   desc 'create yarn directory'
-#   task :run_yarn_task do
+#   desc 'create app defaults'
+#   task :create_defaults do
 #     on roles(:app) do
-#         execute "mkdir #{latest_release}/vendor/assets/yarn_components"
+#         execute "bin/init_config"
 #     end
 #   end
     
   before :starting,     :check_revision
-#   before :updated,     :run_yarn_task
+#   before :updated,      :create_defaults
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
   after  :finishing,    :restart
