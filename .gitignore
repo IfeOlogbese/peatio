@@ -42,8 +42,8 @@ tags
 .idea
 
 /vendor/bundle
-/vendor/assets/yarn_components/*
-!/vendor/assets/yarn_components/.gitkeep
+#/vendor/assets/yarn_components/*
+#!/vendor/assets/yarn_components/.gitkeep
 .env
 .DS_Store
 .agignore
